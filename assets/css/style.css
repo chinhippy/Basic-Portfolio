@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    font-size: 24px;
+    line-height: 32px;
+    color: #ffffff;
+    background-image: url("../images/concrete_seamless.png");
+}
+
+a {
+    color: #777;
+    text-decoration: none;
+}
+
+#header {
+    width: 100%;
+    overflow: auto;
+    background-color: #ffffff;
+    border-style: none none solid none;
+    border-bottom-color: #cccccc;
+    font-family: Arial;
+    font-size: 18px;
+    color: #777777;
+    font-weight: bold;
+    }
+
+aside {
+    float: left;
+    width: 15%;
+    text-align: center;
+    margin-left: 150px;
+    padding :12px;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    font-size: 28px;
+    font-family: Georgia;    
+}
+
+#nav-bar {
+    font-family: Arial;
+    font-size: 12px;
+    color: #777777;
+    text-decoration: none;
+    font-weight: normal;
+    margin-top: 20em;
+    }
+
+
+#left-section {
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    color: #4aaaa5;
+    background-color: #ffffff;
+    overflow: auto;
+    width: 50%;
+    height: 400px;
+    margin-left: 150px;
+    margin-right: 150px;
+    border: 1px solid #dddddd;
+    padding-left: 12px;
+    text-align: left;
+  }
+
+  h2 {
+      float: left;
+      clear: right;   
+  }
+
+  .about-me {
+      text-align: left;
+      font-weight: bold;
+  }
+
+.mugshot {
+    float: left;
+    width: 50%;
+    height: 50%;
+}
+/* 
+#right-section {
+    float: left;
+    width: 20%;
+    margin-left: 80px;
+    height: 50px;
+    background-color: #ffffff; */
+}
+
+
+footer {
+    /* position: absolute; */
+    font-size: 3px;    
+		/* padding: 3em; */
+	text-align: center;
+	color: #cccccc;
+	background-color: #666666;
+}
