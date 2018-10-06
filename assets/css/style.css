@@ -25,6 +25,7 @@ a {
     font-size: 18px;
     color: #777777;
     font-weight: bold;
+    margin-top: 0px;
     }
 
 aside {
@@ -39,14 +40,31 @@ aside {
     font-family: Georgia;    
 }
 
-#nav-bar {
+.nav-bar {
     font-family: Arial;
-    font-size: 12px;
+    font-size: 15px;
     color: #777777;
     text-decoration: none;
     font-weight: normal;
-    margin-top: 20em;
+    margin-top: 12px;
     }
+
+#nav-left {
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+#nav-center {
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 2px solid gray ;  
+}
+
+#nav-right {
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 2px solid gray;  
+}
 
 
 #left-section {
@@ -55,14 +73,16 @@ aside {
     font-weight: bold;
     color: #4aaaa5;
     background-color: #ffffff;
-    overflow: auto;
-    width: 50%;
+    overflow: hidden;
+    max-width: 960px;
     height: 400px;
+    margin-top: 30px;
     margin-left: 150px;
     margin-right: 150px;
     border: 1px solid #dddddd;
     padding-left: 12px;
     text-align: left;
+    clear: left;
   }
 
   h2 {
@@ -70,31 +90,71 @@ aside {
       clear: right;   
   }
 
-  .about-me {
+  #about-me {
       text-align: left;
       font-weight: bold;
   }
 
-.mugshot {
+  #mugshot {
+    position: relative;  
+    clear: both;    
     float: left;
-    width: 50%;
-    height: 50%;
 }
-/* 
-#right-section {
+
+hr {
+    clear: both;
+    float: left;
+}
+  #bio {
+      color: #777777;
+    float: left;
+  }
+
+  p {
+      font-size: 15px;
+      color: #777777;
+      font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+      text-align: left;
+      float: left;
+      overflow: auto;
+  }
+
+  /* Sticky Footer */
+  /* .footer {
+    position: fixed;
+    text-align: center;
+    font-size: 12px;
+    line-height: 50px;
+    background-color:#666666;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-top: 8px solid #4aaaa5;
+} */
+
+.footer {
+    position: absolute;
+    text-align: center;
+    font-size: 12 px;
+    color: white;
+    line-height: 30px;
+    background-color: #666666;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-top: 8px solid #4aaaa5;
+}
+
+#mine {
+    text-align: center;
+    padding: 15px;
+}
+
+/* #right-section {
     float: left;
     width: 20%;
     margin-left: 80px;
     height: 50px;
-    background-color: #ffffff; */
-}
-
-
-footer {
-    /* position: absolute; */
-    font-size: 3px;    
-		/* padding: 3em; */
-	text-align: center;
-	color: #cccccc;
-	background-color: #666666;
+    background-color: #ffffff;
+    margin-left: 150px; */
 }
