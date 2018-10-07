@@ -40,6 +40,13 @@ aside {
     font-family: Georgia;    
 }
 
+/* nav {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    border-bottom: 2px solid #ccc;
+    font-family: 'Georgia', Times, "Times New Roman", serif; */
+
 .nav-bar {
     font-family: Arial;
     font-size: 15px;
@@ -67,7 +74,7 @@ aside {
 }
 
 
-#left-section {
+#left-section-index {
     float: left;
     font-size: 18px;
     font-weight: bold;
@@ -85,6 +92,73 @@ aside {
     clear: left;
   }
 
+  #left-section-portfolio {
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    color: #4aaaa5;
+    background-color: #ffffff;
+    max-width: 960px;
+    height: 400px;
+    margin-top: 30px;
+    margin-left: 150px;
+    margin-right: 150px;
+    border: 1px solid #dddddd;
+    padding-left: 12px;
+    text-align: left;
+    clear: left;
+  }
+
+  .icons {
+      float: left;
+      width: 50%;
+      padding: 5px;
+  }
+
+  #left-section-portfolio {
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    color: #4aaaa5;
+    background-color: #ffffff;
+    width: 960px;
+    height: 400px;
+    margin-top: 30px;
+    margin-left: 150px;
+    margin-right: 150px;
+    border: 1px solid #dddddd;
+    padding-left: 12px;
+    text-align: left;
+   }
+
+   /* flexbox maybe?? */
+   .row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+    padding: 10px;
+}
+
+ #left-section-contact {
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    color: #4aaaa5;
+    background-color: #ffffff;
+    max-width: 960px;
+    height: 400px;
+    margin-top: 30px;
+    margin-left: 150px;
+    margin-right: 150px;
+    border: 1px solid #dddddd;
+    padding-left: 12px;
+    text-align: left;
+    clear: left;
+  }
+
+
   h2 {
       float: left;
       clear: right;   
@@ -97,14 +171,14 @@ aside {
 
   #mugshot {
     position: relative;  
-    clear: both;    
+    clear: left;
     float: left;
 }
 
-hr {
+/* hr {
     clear: both;
     float: left;
-}
+} */
   #bio {
       color: #777777;
     float: left;
@@ -117,21 +191,15 @@ hr {
       text-align: left;
       float: left;
       overflow: auto;
+      font-weight: normal;
   }
 
-  /* Sticky Footer */
-  /* .footer {
-    position: fixed;
-    text-align: center;
-    font-size: 12px;
-    line-height: 50px;
-    background-color:#666666;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    border-top: 8px solid #4aaaa5;
-} */
-
+.label {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
+    text-align: left;
+}
+  
 .footer {
     position: absolute;
     text-align: center;
@@ -147,14 +215,54 @@ hr {
 
 #mine {
     text-align: center;
-    padding: 15px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    font-size: 10px;
+    margin: 0;
 }
 
-/* #right-section {
-    float: left;
-    width: 20%;
-    margin-left: 80px;
-    height: 50px;
-    background-color: #ffffff;
-    margin-left: 150px; */
-}
+/*Form*/
+    
+.myForm {
+    display: flex;
+    padding: 1.8em;
+  }
+  .message {
+   margin-right: 2em; 
+   display: flex;
+   flex-direction: column;
+
+  }
+  .message > textarea {
+   flex: 1; 
+   min-width: 18em;
+   max-width: 870px;
+  }
+  .contact {
+       flex: 1; 
+  }
+  .contact input {
+  width: 850px;
+  }
+  .contact input,
+  .contact button {
+    padding: 1em;
+    margin-bottom: 1em;
+  }
+  .contact button {
+   background: #11a099;
+   color: white;
+   border: 0;
+   margin-top: 10%;
+  }
+
+/* will work on hovers */
+.contact a:hover {
+    color: #4aaaa5;
+  }
+  .about a:hover {
+    color: #4aaaa5;
+  }
+  .portfolio a:hover {
+    color: #4aaaa5;
+  }

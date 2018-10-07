@@ -1,0 +1,184 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } */
+  
+  /* body {
+    background-image: url("../images/concrete_seamless.png");
+    height: 1000px; */
+  }
+/*   
+  h1 {
+    font-family: 'Georgia', Times, "Times New Roman", serif; */
+  }
+    
+  /*  flex box -- navigation bar */
+  nav {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    border-bottom: 2px solid #ccc;
+    font-family: 'Georgia', Times, "Times New Roman", serif;
+  }
+  
+  /* spaced the child of the nav parent to space-between the logo and the nav links */
+  .top-container {
+    display: flex;
+    justify-content: space-between;
+    width: 960px;
+  }
+  
+  /* gave the logo a flex-start so that it would also appear on the left side of the browser */
+  .name-logo {
+    flex: flex-start;
+  }
+  
+  .name-logo a {
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  nav h1 {
+    position: relative;
+    background-color: #4aaaa5;
+    padding: 24px 30px;
+    color: #ffffff;
+    font-size: 30px;
+  }
+  
+  /* .navs is a child of the nav div which controls all three of the links  */
+  .navs {
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
+    padding: 30px 30px 30px 30px;
+    font-size: 20px;
+  }
+  
+  .contact {
+    padding-left: 20px;
+  }
+  
+  .portfolio {
+    padding-left: 20px;
+  }
+  
+  h1 a {
+    text-decoration: none;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #777;;
+  }
+  
+  
+  .name-logo {
+    flex: flex-start;
+    text-align: center;
+    text-decoration: none;
+    text-decoration-line: none;
+  }
+  
+  .main {
+      /* display: flex; */
+      /* justify-content: space-between; */
+      position: relative;
+      /* flex-direction: column; */
+      padding: 30px;
+      top: 60px;
+      width: 960px; 
+      margin: 0 auto;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      /* flex-direction: column; */
+  }
+
+  .contact-header {
+    font-size: 30px;
+    color: #4aaaa5;
+  }
+  
+  /* styled line under the 'contact' header */
+  hr {
+    position: relative;
+    top: 10px;
+    color: #ddd;
+  }
+
+  .form {
+      width: 960px;
+      position: relative;
+      top: 30px;
+      height: 500px;
+  }
+
+  /* moved placeholder text over 10px to the right */
+  ::placeholder {
+    padding-left: 10px;
+  }
+
+  .box {
+    width: 700px;
+    height: 35px;
+  }
+
+  /* I had to make a div for the message box so that I could create a resize able text box
+  I also had to add a min/max height so that the box could be resized larger if necessary but 
+  also can not be resized too large that it'll overflow the container. */
+
+  .msg-box {
+      border: 1px solid #ddd;;
+      height: 120px;
+      width: 900px;
+      resize: vertical;
+      overflow: auto;
+      max-height: 240px;
+      min-height: 80px;
+  }
+
+  .txt {
+      padding-bottom: 10px;
+      padding-top: 10px;
+      font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+      color: #777777;
+  }
+
+  .button {
+      position: relative;
+      top: 20px;
+      padding: 10px;
+      width: 100px;
+      background-color: #4aaaa5;
+  }
+
+  .submit {
+      color: #fff;
+  }
+
+  
+  
+  /* Some hovers for the nav links */
+  .contact a:hover {
+    color: #4aaaa5;
+  }
+  .about a:hover {
+    color: #4aaaa5;
+  }
+  .portfolio a:hover {
+    color: #4aaaa5;
+  }
+  
+  /* fixed the footer to the screen */
+  footer {
+    text-align: center;
+    padding-top: 20px;
+    color: #ccc;
+    position: fixed;
+    background-color: #666;
+    width: 100%;
+    bottom: 0;
+    height: 60px;
+    border-top: 10px solid #4aaaa5;
+  }
